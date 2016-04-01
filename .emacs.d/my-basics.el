@@ -1,0 +1,18 @@
+; ~/.emacs.d/my-basics.el
+
+;; Remove scrollbars, menu bars, and toolbars
+(when (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(when (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+
+;; set custom theme path
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;; set theme permantly
+(load-theme 'monokai t)
+
+;; no startup msg
+(setq inhibit-startup-message t)        ; Disable startup message
+
+;; Set font
+;; (set-default-font "Meslo 12")
+
